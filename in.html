@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>legal-solutions</title>
-    <!-- সঠিক CDN লিংক ও অর্ডার -->
+    <!-- Correct CDN links and order -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.js"></script>
@@ -13,14 +13,15 @@
 </head>
 
 <body>
-    <nav class="bg-red-300 py-6">
-        <div class="container mx-auto lg:px-24 px-8">
-            <div class="flex justify-between">
-                <div class="flex justify-center items-center space-x-24">
+    <!-- nav section -->
+    <section>
+        <nav class="py-6">
+            <div class="container mx-auto lg:px-24 px-8">
+                <div class="flex justify-between">
                     <div>
-                        <img src="/images/logo2.png" alt="">
+                        <img src="./images/logo2.png" alt="Company Logo" class="w-auto h-auto max-w-full">
                     </div>
-                    <div class="flex gap-3">
+                    <div class="flex gap-3 hidden lg:flex gap-6">
                         <div class="flex gap-3">
                             <div>
                                 <a href="#">Home</a>
@@ -61,17 +62,137 @@
                                 <i class="fa-solid fa-chevron-right"></i>
                             </div>
                         </div>
+                        <div class="lg:hidden">
+                            <button class="bg-[#b87f59] text-white  p-4 rounded (0.25rem)">
+                                Free Consultation
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Mobail manue button -->
+                    <div class="lg:hidden">
+                        <label for="my-drawer" class="btn btn-ghost">
+                            <i class="fa-solid fa-bars text-xl"></i>
+                        </label>
                     </div>
                 </div>
-                <div>
-                    <button class="bg-[#b87f59] text-white  p-4 rounded (0.25rem)">
-                        Free Consultation
-                    </button>
+            </div>
+        </nav>
+    </section>
+
+    <section
+        style="background-image: url(./images/banner.png); background-size: cover; background-position: center; background-repeat: no-repeat; height: 60vh; width: 70%; margin-top: 60px;"
+        class="relative flex justify-center items-center mx-auto lg:px-24 px-8">
+
+        <!-- <div class="absolute inset-0 bg-black/40 z-10"></div> -->
+        <div class="div class=container mx-auto lg:px-24 px-8">
+            <h6 class="lg:text-5xl text-2xl font-bold text-center mb-4 lg:mb-6 px-4 text-white">
+                We Provide Effective <br> Legal Solutions
+            </h6>
+            <p class="lg:text-base text-sm text-white lg:mb-6 mb-4 lg:px-0 px-4">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form.
+            </p>
+            <div class="flex flex-col lg:flex-row justify-center lg:gap-6 w-full lg:w-auto">
+                <div class="w-full lg:w-96">
+                    <input type="text" placeholder="Search your services"
+                        class="input input-neutral border border-gray-300 rounded-md px-4 lg:px-6 w-full h-12" />
+                </div>
+                <div class="w-full lg:w-auto">
+                    <button class="bg-[#b87f59] text-white  px-10 py-3 rounded (0.25rem)">Search</button>
                 </div>
             </div>
-
         </div>
-    </nav>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h6 class="lg:text-5xl text-2xl font-bold text-center mt-6">The Legal Practice Area</h6>
+            <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 mx-auto lg:px-24 px-8">
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                    <img src="images/business.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-2xl font-bold">Business Law</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+
+                    <div class="flex items-center justify-center w-8 h-8 bg-amber-700 rounded-full p-2 text-white">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm bg-gradient-to-r from-slate-50 via-slate-100 to-slate-100">
+                <figure class="px-10 pt-10">
+                    <img src="images/criminal.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-2xl font-bold">Criminal Law</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+
+                    <div class="flex items-center justify-center w-8 h-8 bg-amber-700 rounded-full p-2 text-white">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                    <img src="images/child.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-2xl font-bold">Child Support</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+
+                    <div class="flex items-center justify-center w-8 h-8 bg-amber-700 rounded-full p-2 text-white">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                    <img src="images/education.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-2xl font-bold">Education Law</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+
+                    <div class="flex items-center justify-center w-8 h-8 bg-amber-700 rounded-full p-2 text-white">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                    <img src="images/divorce.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-2xl font-bold">Divorce Law</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+
+                    <div class="flex items-center justify-center w-8 h-8 bg-amber-700 rounded-full p-2 text-white">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="px-10 pt-10">
+                    <img src="images/tax.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title text-2xl font-bold">Tax Law</h2>
+                    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+
+                    <div class="flex items-center justify-center w-8 h-8 bg-amber-700 rounded-full p-2 text-white">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
